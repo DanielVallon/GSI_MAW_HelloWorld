@@ -1,0 +1,408 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CLA_TOKEN_GSI
+ major_version : 26
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x11541b5c00f041d9
+ internal_properties : BgAAAAYAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      CLA_TOKEN_GSI est une Classe <mapping=Token><§rad:1§>
+      	<§rad:1§>
+      local prive 
+      	m_ID						est un entier sur 8 octets	<mapping=ID>
+      	m_ID__F_USER				est un entier sur 8 octets	<mapping=ID__F_USER>
+      	m_Code__F_GRP				est une chaîne				<mapping=Code__F_GRP>
+      	m_Code__F_SGRP				est une chaîne				<mapping=Code__F_SGRP>
+      	m_Code__F_CNX				est une chaîne				<mapping=Code__F_CNX>
+      	m_Code__F_APP				est une chaîne				<mapping=Code__F_APP>
+      	m_Code__F_WS				est une chaîne				<mapping=Code__F_WS>
+      	m_Code__F_WWW				est une chaîne				<mapping=Code__F_WWW>
+      	m_Token						est une chaîne				<mapping=Token>
+      	m_Login_indicatif			est une chaîne				<mapping=Login_indicatif>
+      	m_Tracée					est un booléen				<mapping=Tracée>
+      	m_DH_Creation				est une dateheure			<mapping=DH_Creation>
+      	m_EstAdministrateur			est un booléen				<mapping=EstAdministrateur>
+      	m_URL_REST_Racine			est une chaîne				<mapping=URL_REST_Racine>
+      	m_URL_REST_Principale		est une chaîne				<mapping=URL_REST_Principale>
+      	m_URL_WWW					est une chaîne				<mapping=URL_WWW>
+      	m_Ambiance					est une chaîne				<mapping=Ambiance>
+      	m_IdentifiantDeConnexion	est une chaîne				<mapping=IdentifiantDeConnexion>
+      	
+      	
+      	m_Remarques					est une chaine	// Pas de mapping, utilisé pour envoyer des informations d'erreurs
+      
+      public
+      	m_tab_APPRES				est un tableau de CLA_APPRES
+      FIN<§rad:1§>
+      <§rad:1§>
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1248653078655812057
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1248653078655877593
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  properties :
+   -
+     name : DH_Creation
+     identifier : 0x11541b5c00f141d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique DH_Creation() : dateheure
+         
+         renvoyer m_DH_Creation
+        type : 1966080
+     template_refs : []
+   -
+     name : ID
+     identifier : 0x11541b5c00f241d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique ID() : entier sur 8 octets
+         
+         renvoyer m_ID
+        type : 1966080
+     template_refs : []
+   -
+     name : ID__F_USER
+     identifier : 0x11541b5c00f341d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique ID__F_USER() : entier sur 8 octets
+         
+         renvoyer m_ID__F_USER
+        type : 1966080
+      -
+        code : |1-
+         procédure publique ID__F_USER(Valeur est un entier sur 8 octets)
+         
+         m_ID__F_USER=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Login_indicatif
+     identifier : 0x11541b5c00f441d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Login_indicatif() : chaîne
+         
+         renvoyer m_Login_indicatif
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Login_indicatif(Valeur est une chaîne)
+         
+         m_Login_indicatif=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Token
+     identifier : 0x11541b5c00f541d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Token() : chaîne
+         
+         renvoyer m_Token
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Token(Valeur est une chaîne)
+         
+         m_Token=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Tracée
+     identifier : 0x11541b5c00f641d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Tracée() : booléen
+         
+         renvoyer m_Tracée
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Tracée(Valeur est un booléen)
+         
+         m_Tracée=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Code__F_CNX
+     identifier : 0x11541b5c00f741d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code__F_CNX() : chaîne
+         
+         renvoyer m_Code__F_CNX
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code__F_CNX(Valeur est une chaîne)
+         
+         m_Code__F_CNX=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : EstAdministrateur
+     identifier : 0x11541b5c00f841d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique EstAdministrateur() : booléen
+         
+         renvoyer m_EstAdministrateur
+        type : 1966080
+      -
+        code : |1-
+         procédure publique EstAdministrateur(Valeur est un booléen)
+         
+         m_EstAdministrateur=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : URL_WWW
+     identifier : 0x11964b3b0623a6c8
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique URL_WWW() : chaîne
+         
+         renvoyer m_URL_WWW
+        type : 1966080
+      -
+        code : |1-
+         procédure publique URL_WWW(Valeur est une chaîne)
+         
+         m_URL_WWW=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Remarques
+     identifier : 0x11979356018f0a8d
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Remarques() : chaîne
+         
+         renvoyer m_Remarques
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Remarques(Valeur est une chaîne)
+         
+         m_Remarques=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : URL_REST_Principale
+     identifier : 0x1198ba66004496cc
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique URL_REST_Principale() : chaîne
+         
+         renvoyer m_URL_REST_Principale
+        type : 1966080
+      -
+        code : |1-
+         procédure publique URL_REST_Principale(Valeur est une chaîne)
+         
+         m_URL_REST_Principale=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : URL_REST_Racine
+     identifier : 0x1198ba6a004ba7c3
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique URL_REST_Racine() : chaîne
+         
+         renvoyer m_URL_REST_Racine
+        type : 1966080
+      -
+        code : |1-
+         procédure publique URL_REST_Racine(Valeur est une chaîne)
+         
+         m_URL_REST_Racine=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Code__F_APP
+     identifier : 0x1199ff87163e968c
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code__F_APP() : chaîne
+         
+         renvoyer m_Code__F_APP
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code__F_APP(Valeur est une chaîne)
+         
+         m_Code__F_APP=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Code__F_GRP
+     identifier : 0x1199ff8f163fb3c8
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code__F_GRP() : chaîne
+         
+         renvoyer m_Code__F_GRP
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code__F_GRP(Valeur est une chaîne)
+         
+         m_Code__F_GRP=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Code__F_SGRP
+     identifier : 0x1199ff911640bd2f
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code__F_SGRP() : chaîne
+         
+         renvoyer m_Code__F_SGRP
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code__F_SGRP(Valeur est une chaîne)
+         
+         m_Code__F_SGRP=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Code__F_WS
+     identifier : 0x1199ff941641c8a8
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code__F_WS() : chaîne
+         
+         renvoyer m_Code__F_WS
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code__F_WS(Valeur est une chaîne)
+         
+         m_Code__F_WS=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Code__F_WWW
+     identifier : 0x1199ff971642d2d9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code__F_WWW() : chaîne
+         
+         renvoyer m_Code__F_WWW
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code__F_WWW(Valeur est une chaîne)
+         
+         m_Code__F_WWW=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : IdentifiantDeConnexion
+     identifier : 0x11af1c8800166ed1
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique IdentifiantDeConnexion() : chaîne
+         
+         renvoyer m_IdentifiantDeConnexion
+        type : 1966080
+      -
+        code : |1-
+         procédure publique IdentifiantDeConnexion(Valeur est une chaîne)
+         
+         m_IdentifiantDeConnexion=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Ambiance
+     identifier : 0x11e01576122841d7
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Ambiance() : chaîne
+         
+         renvoyer m_Ambiance
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Ambiance(Valeur est une chaîne)
+         
+         m_Ambiance=Valeur
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : BgAAAAYAAAA6ih3UbgNXHwTtiPSFUEj+2fi/m7v4QV2rqidAupM=
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x181202850006c2e1
+  internal_properties : BgAAAAYAAAAnMYFQ1bL/vz9ehh7L22SNNSlIzGTOI8h5F/WtgDNP
+  strings :
+   -
+     text : {}
+     index : 0
+custom_note :
+ internal_properties : BgAAAAYAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

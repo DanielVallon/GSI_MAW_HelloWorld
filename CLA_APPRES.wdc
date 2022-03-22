@@ -1,0 +1,228 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CLA_APPRES
+ major_version : 26
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x11e6a86c0020b459
+ internal_properties : BgAAAAYAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      CLA_APPRES est une Classe <mapping=F_APPRES><§rad:1§>
+      prive
+      	<MAPPING><§rad:1§>
+      	m_ID				est un entier sur 8 octets	<mapping=ID, clé unique><§rad:1§>
+      	m_Code				est une chaîne				<mapping=Code><§rad:1§>
+      	m_Description		est une chaîne				<mapping=Description><§rad:1§>
+      	m_Supprimée			est un booléen				<mapping=Supprimée><§rad:1§>
+      	m_DH_Creation		est une dateheure			<mapping=DH_Creation><§rad:1§>
+      	m_DH_Modification	est une dateheure			<mapping=DH_Modification><§rad:1§>
+      	m_Code__F_APP		est une chaîne				<mapping=Code__F_APP>
+      	m_Type				est une chaîne				<mapping=Type>
+      	m_NomBrut			est une chaîne				<mapping=NomBrut>
+      	<FIN><§rad:1§>
+      	
+      	m_NomNet			est une chaine				//Peuplé par PG_Token_Demander
+      FIN<§rad:1§>
+      <§rad:1§>
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1289903525100368985
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()<§rad:1§>
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1289903525100434521
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()<§rad:1§>
+     type : 655360
+  properties :
+   -
+     name : Code
+     identifier : 0x11e6a88800232350
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code() : chaîne
+         
+         renvoyer m_Code
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code(Valeur est une chaîne)
+         
+         m_Code=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Code__F_APP
+     identifier : 0x11e6a88a00242b00
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Code__F_APP() : chaîne
+         
+         renvoyer m_Code__F_APP
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Code__F_APP(Valeur est une chaîne)
+         
+         m_Code__F_APP=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Description
+     identifier : 0x11e6a88c002531a8
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Description() : chaîne
+         
+         renvoyer m_Description
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Description(Valeur est une chaîne)
+         
+         m_Description=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : DH_Creation
+     identifier : 0x11e6a89100264649
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique DH_Creation() : dateheure
+         
+         renvoyer m_DH_Creation
+        type : 1966080
+     template_refs : []
+   -
+     name : DH_Modification
+     identifier : 0x11e6a89600275915
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique DH_Modification() : dateheure
+         
+         renvoyer m_DH_Modification
+        type : 1966080
+     template_refs : []
+   -
+     name : ID
+     identifier : 0x11e6a89a00286a7a
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique ID() : entier sur 8 octets
+         
+         renvoyer m_ID
+        type : 1966080
+     template_refs : []
+   -
+     name : Supprimée
+     identifier : 0x11e6a89e002978c3
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Supprimée() : booléen
+         
+         renvoyer m_Supprimée
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Supprimée(Valeur est un booléen)
+         
+         m_Supprimée=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Type
+     identifier : 0x11e6b51011a0175b
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Type() : chaîne
+         
+         renvoyer m_Type
+        type : 1966080
+      -
+        code : |1-
+         procédure publique Type(Valeur est une chaîne)
+         
+         m_Type=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : NomBrut
+     identifier : 0x11e6b51511a12797
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique NomBrut() : chaîne
+         
+         renvoyer m_NomBrut
+        type : 1966080
+      -
+        code : |1-
+         procédure publique NomBrut(Valeur est une chaîne)
+         
+         m_NomBrut=Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : NomNet
+     identifier : 0x11e6c03b258ab659
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique NomNet() : chaîne
+         
+         renvoyer m_NomNet
+        type : 1966080
+      -
+        code : |1-
+         procédure publique NomNet(Valeur est une chaîne)
+         
+         m_NomNet=Valeur
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : BgAAAAYAAAA6ih3UbgNXHwTtiPSFUEj+2fi/m7v4QV2rqidAupM=
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x11e6a85c00197760
+  internal_properties : BgAAAAYAAAAnMYFQ1bL/vz9ehh7L22SNNSlIzGTOI8h5F/WtgDNP
+  strings :
+   -
+     text : {}
+     index : 0
+custom_note :
+ internal_properties : BgAAAAYAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
